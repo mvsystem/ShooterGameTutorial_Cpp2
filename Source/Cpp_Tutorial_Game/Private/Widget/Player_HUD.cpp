@@ -28,7 +28,7 @@ UPlayer_HUD::UPlayer_HUD(const FObjectInitializer& ObjectInitializer) : UUserWid
 
 bool UPlayer_HUD::Initialize()
 {
-	bool bSuccess = Super::Initialize();
+	/*bool bSuccess = Super::Initialize();
 	UE_LOG(LogTemp, Warning, TEXT("Begin Play Widget"));
 	if (!bSuccess) return false;
 	Pause->OnClicked.AddDynamic(this, &UPlayer_HUD::OnPauseClicked);
@@ -41,9 +41,9 @@ bool UPlayer_HUD::Initialize()
 	AGameModeBase* Gamemode = UGameplayStatics::GetGameMode(this);
 	ATinyTankGameMode* TinyTankGM = Cast<ATinyTankGameMode>(Gamemode);
 
-	TinyTankGM->onEnemyDead.AddDynamic(this,&UPlayer_HUD::EnemyDead);
+	TinyTankGM->onEnemyDead.AddDynamic(this,&UPlayer_HUD::EnemyDead);*/
 
-	return false;
+	return true;
 }
 
 void UPlayer_HUD::OnPauseClicked()
