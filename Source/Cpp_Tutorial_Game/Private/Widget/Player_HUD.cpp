@@ -43,7 +43,7 @@ bool UPlayer_HUD::Initialize()
 
 	TinyTankGM->onEnemyDead.AddDynamic(this,&UPlayer_HUD::EnemyDead);
 
-	return true;
+	return false;
 }
 
 void UPlayer_HUD::OnPauseClicked()
